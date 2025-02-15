@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Page</title>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fade-In Animation for Page Load */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Featured Items Section */
+        .featured-items {
+            text-align: center;
+            padding: 50px 20px;
+            color: aliceblue;
+        }
+
+        .featured-items h2 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #ffcc66;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        /* Slide-Down Animation */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #444;
+            color: aliceblue;
+            max-width: 600px;
+            animation: zoomIn 1.5s ease-in-out;
+            gap: 20px;
+        }
+
+        /* Zoom-In Animation */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .item:hover {
+            background-color: #555;
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+
+        .item img {
+            border-radius: 50%;
+            border: 2px solid #ffcc66;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 150px;
+            height: 150px;
+        }
+
+        .item img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .item-content {
+            text-align: left;
+            flex: 1;
+        }
+
+        .price {
+            font-weight: bold;
+            color: rgb(159, 210, 255);
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .item {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .item img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .item img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .featured-items h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Featured Items Section -->
+    <section class="featured-items">
+        <h2>Featured Items</h2>
+
+        <div class="item">
+            <img src="https://d2gr5kl7dt2z3t.cloudfront.net/blog/wp-content/uploads/2017/01/26042820/29834362_ml.jpg" alt="Coffee Cup">
+            <div class="item-content">
+                <h3>Specialty Coffee</h3>
+                <p>Our signature blend of freshly roasted beans.</p>
+                <p class="price">$3.99</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://natashaskitchen.com/wp-content/uploads/2018/03/Lemon-Blueberry-Muffins-4-600x900.jpg" alt="Blueberry Muffin">
+            <div class="item-content">
+                <h3>Blueberry Muffin</h3>
+                <p>Freshly baked with real blueberries.</p>
+                <p class="price">$2.49</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="https://www.kitchensanctuary.com/wp-content/uploads/2019/04/Roast-potatoes-with-salt-and-fresh-thyme-leaves-tall-FS.jpg" alt="Crispy Potatoes">
+            <div class="item-content">
+                <h3>Crispy Potato</h3>
+                <p>A brisk snack with potatoes and spices.</p>
+                <p class="price">$2.59</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+    

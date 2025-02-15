@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fade-In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Header Styling */
+        h3 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: #ffcc66;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        /* Slide-Down Animation for Header */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Contact Info Styling */
+        .centered {
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeUp 1.5s ease-in-out;
+        }
+
+        /* Fade-Up Animation for Text Section */
+        @keyframes fadeUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Social Media Section Styling */
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            animation: popIn 1.5s ease-in-out;
+            flex-wrap: wrap;
+        }
+
+        /* Pop-In Animation for Social Icons */
+        @keyframes popIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .social-media div {
+            text-align: center;
+        }
+
+        .social-media img {
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover Effects on Social Media Icons */
+        .social-media img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 4px 8px rgba(255, 204, 102, 0.8);
+        }
+
+        .social-media p {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #ffcc66;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 10px 0;
+            background-color: #222;
+            color: aliceblue;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            h3 {
+                font-size: 2rem;
+            }
+            .centered {
+                font-size: 1rem;
+                padding: 15px;
+            }
+            .social-media {
+                gap: 30px;
+            }
+            .social-media img {
+                width: 50px;
+                height: 50px;
+            }
+            .social-media p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h3 {
+                font-size: 1.8rem;
+            }
+            .centered {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                padding: 10px;
+            }
+            .social-media {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .social-media img {
+                width: 40px;
+                height: 40px;
+            }
+            .social-media p {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <h3>Contact Us</h3>
+
+    <!-- Contact Info Section -->
+    <div class="centered">
+        <p>
+            We'd love to hear from you! Whether you have a question, a suggestion, or just want to say hello, here's how you can reach us:<br><br>
+            <strong>Visit Us:</strong><br>
+            Café Latte, 123 Serenity Street, Blissful City, India 560001<br><br>
+            <strong>Give Us a Call:</strong><br>
+            Toll-Free Number: 1800-123-4567<br><br>
+            <strong>Send Us an Email:</strong><br>
+            Email: cafélatte12@gmail.com<br><br>
+            Feel free to drop by during our opening hours to enjoy a cup of coffee with us, or reach out via phone or email if you prefer. We're always here to help and look forward to connecting with you!
+        </p>
+        <p><strong>Follow Us on Social Media:</strong></p>
+    </div>
+
+    <!-- Social Media Section -->
+    <div class="social-media">
+        <div>
+            <img src="https://parspng.com/wp-content/uploads/2021/09/Instagram.parspng.com-5-600x600.png" alt="Instagram">
+            <p>@CaféLatte</p>
+        </div>
+        <div>
+            <img src="https://pngimg.com/uploads/youtube/youtube_PNG102349.png" alt="YouTube">
+            <p>Café Latte Official</p>
+        </div>
+        <div>
+            <img src="./messenger-removebg-preview.png" alt="Messenger">
+            <p>Café Latte Chat</p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Café Latte. All rights reserved.</p>
+    </footer>
+</body>
+</html>

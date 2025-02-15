@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Café</title>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: #333;
+            font-family: Arial, sans-serif;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Fade-In Animation for Page Load */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Header Styling */
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 30px;
+            color: #ffcc66;
+            animation: slideDown 1.5s ease-in-out;
+        }
+
+        /* Slide-Down Animation for Header */
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Content Styling */
+        .centered {
+            text-align: center;
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeUp 1.5s ease-in-out;
+        }
+
+        /* Fade-Up Animation for Text Section */
+        @keyframes fadeUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Decorative Line Below Header */
+        .line {
+            width: 200px;
+            height: 4px;
+            background-color: #ffcc66;
+            margin: 10px auto;
+            border-radius: 2px;
+            animation: growLine 1.5s ease-in-out;
+        }
+
+        /* Line Growth Animation */
+        @keyframes growLine {
+            from {
+                width: 0;
+                opacity: 0;
+            }
+            to {
+                width: 200px;
+                opacity: 1;
+            }
+        }
+
+        /* Hover Effects on Text */
+        .centered p {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .centered p:hover {
+            transform: scale(1.05);
+            color: #ffcc66;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+            .centered {
+                font-size: 1rem;
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 1.8rem;
+            }
+            .centered {
+                font-size: 0.9rem;
+                line-height: 1.6;
+                padding: 10px;
+            }
+            .line {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <h2>About Us</h2>
+    <div class="line"></div>
+
+    <!-- Content Section -->
+    <div class="centered">
+        <p>
+            Welcome to the heart of Café Latte, where passion meets purpose.
+        </p>
+        <p>
+            At Café Latte, our story is one of dedication to craft, commitment to quality, and celebration of community.
+            Founded with a simple yet profound vision, we set out to create more than just a café—<br>
+            we envisioned a gathering place where people could come together to savor exceptional coffee,
+            delicious food, and meaningful connections.
+        </p>
+    </div>
+</body>
+</html>
